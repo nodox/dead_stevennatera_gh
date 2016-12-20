@@ -174,7 +174,6 @@ article aside {
 }
 
 .blog-header {
-    margin-top: -40px;
     padding: 0 4vw;
     border-bottom: var(--whitegrey) 1px solid;
 }
