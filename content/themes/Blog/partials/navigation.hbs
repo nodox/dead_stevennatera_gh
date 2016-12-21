@@ -1,9 +1,11 @@
-<nav class="navbar navbar-light bg-faded">
-    <ul class="nav navbar-nav">
-        <!-- Loop through the navigation items -->
-        {{#foreach navigation}}
-        <li class="nav-item nav-{{slug}}{{#if current}} nav-current{{/if}}"><a class="nav-link" href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-        <!-- End the loop -->
-    </ul>
-</nav>
+<div class="">
+  <nav class="navbar navbar-light bg-faded">
+      <ul class="nav navbar-nav">
+          <!-- Loop through the navigation items -->
+          {{#foreach navigation}}
+          <li class="nav-item nav-{{slug}}{{#if current}} nav-current{{/if}}"><a class="nav-link" href="{{url absolute="true"}}">{{label}}</a></li>
+          {{/foreach}}
+          <!-- End the loop -->
+      </ul>
+  </nav>
+</div>
