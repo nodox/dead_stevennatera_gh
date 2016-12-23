@@ -13,15 +13,29 @@
 }
 
 
-
+.jumbotron-black {
+  color: #fff;
+  background: #000;
+  border-radius: 0px;
+}
 
 .jumbotron-post {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 320px;
+  border-radius: 0px;
 
 }
+
+.lead {
+  display: inline-block;
+}
+
+.lead-sm-width {
+  width: 80%;
+}
+
 
 .post-item {
   border-bottom: 1px solid #efefef;
@@ -78,4 +92,5 @@
   padding: 40px;
   margin-top: 40px;
   background-color: #000;
+  /*background-color: #2e3234;*/
 }
