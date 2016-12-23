@@ -1,6 +1,9 @@
 
 
 
+
+
+
 .navbar-white {
   color: #000;
 }
@@ -8,6 +11,28 @@
   color: #000;
 }
 
+
+
+
+.jumbotron-post {
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 320px;
+
+}
+
+
+
+.post-header {
+  padding-bottom: 40px;
+}
+
+.post-content {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #efefef;
+
+}
 
 .author {
   border-bottom: 1px solid #efefef;
@@ -30,6 +55,10 @@
 }
 
 
+
+.read-next {
+  padding-top: 20px;
+}
 
 
 

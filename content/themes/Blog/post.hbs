@@ -1,10 +1,12 @@
 {{!< default}}
 
 {{#post}}
-<div class="jumbotron text-sm-center">
-  <h1 class="display-3">{{{title}}}</h1>
-  <p class="lead">Description here</p>
+
+
+{{#if image}}
+<div class="jumbotron jumbotron-post" style="background-image: url({{image}});">
 </div>
+{{/if}}
 
 <div class="container">
     <div class="row {{post_class}}">
@@ -14,25 +16,25 @@
 
 
                 {{! If post is featured and has an image, make a big hero banner }}
-                {{#if image}}{{#if featured}}
-                <div class="hero">
-                    <div class="hero-image" style="background-image: url({{image}});"></div>
-                </div>
-                {{/if}}{{/if}}
 
+
+                <div class="post-header">
+                    <h3 class="text-xs-center">{{{title}}}</h3>
+                    <div class="text-xs-center">
+                        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
+                    </div>
+                </div>
 
                 <section class="post-content">
-                    {{#if image}}{{#unless featured}}<img src="{{image}}" alt="Post image" />{{/unless}}{{/if}}
                     {{content}}
                 </section>
 
                 <footer class="post-footer">
 
 
-                    <section class="post-meta">
-                        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
+{{!--                     <section class="post-meta">
                         <span class="tags">{{tags prefix="in "}}</span>
-                    </section>
+                    </section> --}}
 
 
 
@@ -54,11 +56,13 @@
 
                     {{> subscribeForm}}
 
-                    <section class="read-next">
+                    <section class="read-next text-xs-center">
+
                         {{#next_post}}
-                        <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+                        <h4>Up next</h4>
+                        <a class="" href="{{url}}">
                             <section class="post">
-                                <h2>{{title}}</h2>
+                                <h3>{{title}}</h3>
                                 <p>{{excerpt words="19"}}&hellip;</p>
                             </section>
                         </a>
