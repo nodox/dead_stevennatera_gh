@@ -1,0 +1,43 @@
+
+
+
+.navbar-white {
+  color: #000;
+}
+.navbar-white a {
+  color: #000;
+}
+
+
+.author {
+  border-bottom: 1px solid #efefef;
+  padding: 10px;
+  margin-top: 12px;
+}
+
+.author-img {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+
+
+#subscribeForm {
+  border-bottom: 1px solid #efefef;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.footer-bottom {
+  color: #fff;
+  padding: 40px;
+  margin-top: 40px;
+  background-color: #000;
+}

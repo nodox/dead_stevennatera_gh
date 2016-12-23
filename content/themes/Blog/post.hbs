@@ -8,7 +8,7 @@
 
 <div class="container">
     <div class="row {{post_class}}">
-        <section class="col-sm-8">
+        <section class="col-sm-12">
 
             <article>
 
@@ -29,21 +29,30 @@
                 <footer class="post-footer">
 
 
-                <section class="post-meta">
-                    <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
-                    <span class="tags">{{tags prefix="in "}}</span>
-                </section>
-
-
-                    <section class="author">
-                        <div class="author-img">
-                            <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
-                        </div>
-                        <div class="author-meta">
-                            <h4>{{author.name}}</h4>
-                            <p>{{{author.bio}}} <a href="{{author.website}}">{{author.website}}</a></p>
-                        </div>
+                    <section class="post-meta">
+                        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
+                        <span class="tags">{{tags prefix="in "}}</span>
                     </section>
+
+
+
+                    <section class="author clearfix">
+                        <div class="col-sm-2 text-xs-center">
+                            <img class="rounded-circle img-fluid author-img " src="{{author.image}}" alt="Author image" nopin="nopin" />
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="author-meta">
+                                <h4>{{author.name}}</h4>
+                                <p>{{{author.bio}}} <a href="{{author.website}}">{{author.website}}</a></p>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+
+
+                    {{> subscribeForm}}
 
                     <section class="read-next">
                         {{#next_post}}
@@ -55,8 +64,6 @@
                         </a>
                         {{/next_post}}
                     </section>
-
-                    <a class="gh-btn gh-btn-blue gh-btn-block blog-subscribe-btn" data-toggle="modal" data-target="#blogsubscribe"><span>Subscribe to Weekly Posts</span></a>
 
                 </footer>
 
@@ -72,16 +79,9 @@
                     </script>
                 </section>
 
-
             </article>
 
         </section>
-
-        <div class="col-sm-4">
-            {{!-- {{> sidebar}} --}}
-        </div>
-
-
 
     </div>
 
