@@ -7,15 +7,17 @@
 
 <div class="container">
     <div class="row">
-        <section class="col-sm-9">
+        <section class="col-sm-12">
 
             {{#foreach posts}}
 
-            <article class="{{post_class}}">
-                <header class="post-header text-xs-center">
-                    <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-                    <time class="" datetime="{{date format='YYYY-MM-DD'}}">{{date format="D MMM YYYY"}}</time>
-                </header>
+            <article class="{{post_class}} post-item">
+                <div class="post-header">
+                    <h3 class="text-xs-center"><a href="{{url}}">{{title}}</a></h3>
+                    <div class="text-xs-center">
+                        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
+                    </div>
+                </div>
                 <section class="post-excerpt">
                     <p>{{excerpt words="55"}}&hellip; <a class="read-more" href="{{url}}">Read More</a></p>
                 </section>
@@ -27,8 +29,5 @@
 
         </section>
 
-        <div class="col-sm-3">
-            {{!-- {{> sidebar}} --}}
-        </div>
     </div>
 </div>
