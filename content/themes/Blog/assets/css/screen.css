@@ -6,6 +6,7 @@
 
 .navbar-white {
   color: #000;
+  border-bottom: 2px solid #efefef;
 }
 .navbar-white a {
   color: #000;
@@ -15,10 +16,10 @@
 
 
 .jumbotron-post {
-    background-size:     cover;
-    background-repeat:   no-repeat;
-    background-position: center center;
-    height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 320px;
 
 }
 

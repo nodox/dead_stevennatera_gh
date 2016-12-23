@@ -40,9 +40,13 @@
                     </section>
 
 
-
-
-                    {{> subscribeForm}}
+                    {{subscribe_form
+                      form_class="form-inline"
+                      input_class="form-control"
+                      button_class="btn btn-primary"
+                      placeholder="Your email address"
+                      autofocus="false"
+                    }}
 
                     <section class="read-next text-xs-center">
                         {{#next_post}}
